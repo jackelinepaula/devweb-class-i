@@ -1,12 +1,146 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
-*{
-    font: "Poppins", sans-serif;
+* {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    transition: 0.1s;
 }
 
-header{
+body {
+    background-color: #f8f8f8;
+}
+
+header {
     display: flex;
+    background-color: #bc00031f;
 }
 
+header img {
+    width: 200px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #6A0507;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.nav ul li {
+    display: flex;
+    width: 15%;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.nav ul li a:hover {
+    font-weight: 600;
+    transition: 0.1s;
+    background-color: #f8f8f8;
+    color: #141414;
+}
+
+.nav .dropdown{
+    position: absolute;
+    display: none;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: #6A0507;
+
+}
+
+.nav .dropdown li{
+    width: 100%;
+}
+
+.nav li:hover .dropdown{
+    display: block;
+}
+
+.nav .dropdown li a{
+    width: 100%;
+    
+}
+
+/* Main */
+
+.main {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .h1 {
+    color: #141414;
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.main .h2 {
+    color: #141414;
+    font-weight: 600;
+}
+
+.ol{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.ol li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #1414141e;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ol li:hover{
+    box-shadow: 0px 0px 10px  #1414141e;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    bottom: 0;
+    background-color: #2c0000;
+}
+
+.footer p{
+    font-weight: 300;
+    font-size: 15px;
+    color: #f8f8f8;
+    margin-left: 5px;
+}
