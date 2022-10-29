@@ -7,34 +7,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, metadados, comentários, layout, listas">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/card-main.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Aula 1</title>
     <!-- Fim metadados -->
 </head>
 
 <body>
-    <header>
-        <img src="img/fatec.png" alt="Logo da Fatec Zona Leste">
+
+    <div class="acessibilidade flex-container">
+        <ul class="atalhos">
+            <li><a href="" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+            <li><a href="" accesskey="1" title="Ir para o menu de navegação ">Ir para o menu [2]</a></li>
+            <li><a href="" accesskey="1" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+        </ul>
+        <ul class="links-acess">
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="javascript:void(0)">Sem contraste</a></li>
+            <li><a href="javascript:void(0)">Contraste preto</a></li>
+            <li><a href="javascript:void(0)">A+</a></li>
+        </ul>
+    </div>
+
+    <header class="header">
+        <div class="img">
+            <img src="img/fatec.png" alt="Logo da Fatec Zona Leste">
+        </div>
     </header>
-    <nav>
+    <nav class="nav">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>
-            <li><a href="javascript:void(0)"></a>
-                <ul>
+            <li><a href="javascript:void(0)">Listas</a>
+                <ul class="dropdown">
                     <li><a href="ol.html">Lista Ordenada</a></li>
                     <li><a href="ul.html">Lista Não Ordenada</a></li>
                 </ul>
             </li>
             <li><a href="layout.html">Layout</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="card-main">
         <h1>Lista Ordenada</h1>
-        <p>As lsitas ordenadas começam com a tag &lt;ol&gt;. Cada item da lista começa com tag &lt;li&gt;</p>
-        <p>Os itens dessa lsita são numerados por padrão</p>
-        <img src="img/ol.png" alt="Instruções de criação de uma lista ordenada documento HTML">
+        <div class="content">
+            <p>As listas ordenadas começam com a tag <span>&lt;ol&gt;</span>. Cada item da lista começa com tag <span>&lt;li&gt;</span></p>
+            <p>Os itens dessa lista são numerados por padrão</p>
+            <div class="img-list">
+                <img src="img/ol.png" alt="Instruções de criação de uma lista ordenada documento HTML">
+            </div>
+        </div>
     </main>
 
     <footer>

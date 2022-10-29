@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    color: #141414;
     margin: 0;
     padding: 0;
     transition: 0.1s;
@@ -21,7 +22,7 @@ body {
 
 .acessibilidade ul{
     display: flex;
-    width: 25%;
+    width: 450px;
     justify-content: space-between;
 }
 
@@ -30,17 +31,30 @@ body {
 }
 
 .acessibilidade ul li a{
-    font-size: 15px;
+    font-size: 14px;
     color: #141414;
+    text-decoration: none;
+}
+
+.acessibilidade ul li a:hover{
+    
 }
 
 header {
     display: flex;
     background-color: #bc00031f;
+    height: 110px;
 }
 
-header img {
-    width: 200px;
+header .img {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-left: 40px;
+}
+
+header .img img{
+    width: 100%;
 }
 
 .nav {
@@ -59,6 +73,7 @@ header img {
 
 .nav ul li {
     display: flex;
+    align-items: center;
     width: 15%;
     list-style: none;
 }
@@ -68,7 +83,7 @@ header img {
     color: #f8f8f8;
     font-size: 16px;
     width: 120px;
-    height: 30px;
+    height: 25px;
     padding: 5px;
     text-align: center;
 }
@@ -84,7 +99,7 @@ header img {
     position: absolute;
     display: none;
     width: 200px;
-    margin-top: 40px;
+    margin-top: 105px;
     margin-left: 20px;
     background-color: #6A0507;
 
@@ -171,4 +186,91 @@ header img {
     font-size: 15px;
     color: #f8f8f8;
     margin-left: 5px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid rgba(63, 62, 62, 0.297);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+fieldset input{
+    padding: 7px;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 5px;
+    outline: none;
+    width: 95%;
+    height: 35px;
+}
+
+fieldset input:focus{
+    border: 1px solid rgb(36, 73, 96);
+    box-shadow: 0px 0px 10px rgba(36, 73, 96, 0.189);
+}
+
+fieldset select{
+    border: 1px solid  rgb(55, 55, 55);
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+
+fieldset select:focus{
+    border: 1px solid rgb(36, 73, 96);
+    box-shadow: 0px 0px 10px rgba(36, 73, 96, 0.189);
+}
+
+fieldset textarea{
+    border-radius: 5px;
+    border: 1px solid  rgb(55, 55, 55);
+    width: 95%;
+    outline: none;
+    padding: 10px;
+}
+
+fieldset textarea:focus{
+    border: 1px solid rgb(36, 73, 96);
+    box-shadow: 0px 0px 10px rgba(36, 73, 96, 0.189);
+}
+
+fieldset .btn_enviar{
+    width: 20%;
+    height: 40px;
+    margin: auto;
+    border: none;
+    background-color: #2e962d;
+    color: #fff;
+    font-weight: 600px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+fieldset .btn_limpar{
+    width: 20%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #dabb08;
+    color: #000;
+    font-weight: 600px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.required::after{
+    content: ' *';
+    color: red;
+}
+
+form{
+    width: 100%;
 }
