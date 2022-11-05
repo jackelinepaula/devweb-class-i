@@ -17,9 +17,9 @@
 
     <div class="acessibilidade flex-container">
         <ul class="atalhos">
-            <li><a href="" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
-            <li><a href="" accesskey="1" title="Ir para o menu de navegação ">Ir para o menu [2]</a></li>
-            <li><a href="" accesskey="1" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+            <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+            <li><a href="#nav" accesskey="1" title="Ir para o menu de navegação ">Ir para o menu [2]</a></li>
+            <li><a href="#footer" accesskey="1" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
         </ul>
         <ul class="links-acess">
             <li><a href="acessibilidade.html">Acessibilidade</a></li>
@@ -29,7 +29,7 @@
         </ul>
     </div>
 
-    <header class="header">
+    <header class="header" id="topo">
         <div class="img">
             <img src="img/fatec.png" alt="Logo da Fatec Zona Leste">
         </div>
@@ -50,11 +50,10 @@
         </ul>
     </nav>
 
-    <main class="main">
+    <main class="main" id="conteudo">
+
         <h1 class="h1">Aula Desenvolvimento Web I</h1>
-        <audio controls>
-            <source src="" type="">
-        </audio>
+
         <h2 class="h2">Conteúdos</h2>
         <ol class="ol">
             <li>Comentários</li>
@@ -63,12 +62,16 @@
             <li>Layout</li>
         </ol>
 
+        <h1 class="h1">Conheça a Fatec Zona Leste</h1>
+        <audio controls>
+            <source src="" type="">
+        </audio>
         <video class="video" controls>
             <source src="video/video.mp4" type="video/mp4">
         </video>
     </main>
 
-    <!-- <footer class="footer">
+    <!-- <footer class="footer" id="footer">
         <p>Desenvolvido por Jackeline&copy;</p>
     </footer> -->
 </body>

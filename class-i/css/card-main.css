@@ -57,3 +57,13 @@
 .card-main .img-list img{
     width: 50%;
 }
+
+/* LAYOUT */
+.card-main .img-layout{
+    width: 400px;
+    margin-top: 15px;
+}
+
+.card-main .img-layout img{
+    width: 90%;
+}
