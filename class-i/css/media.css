@@ -1,0 +1,36 @@
+@media (max-width: 740px) {
+    .acessibilidade .atalhos{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 90%;
+    }
+ 
+    .nav ul li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav ul li a {
+        text-align: justify;
+    }
+
+    .nav ul li a:hover {
+        font-weight: 600;
+        transition: 0.1s;
+        color: #d8b1b1;
+    }
+    
+}
